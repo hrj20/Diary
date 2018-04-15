@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>reg</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+
+  body{
+      background-color: #263238;
+      color: #ffffff;
+      font-family: Montserrat;
+      line-height: 1.2;
+      letter-spacing: 2.5px;
+}
+  #one.navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 20px;
+      letter-spacing: 2.5px;
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.2;
+      color: #00B8D4;
+  }
+  #one.navbar-header{
+    display: inline-block;
+  }
+  #oneof.navbar-nav  li a:hover {
+      color: #00B8D4 !important;
+  }
+  #oneof.dotcom{
+  		color:#00B8D4;
+  }
+
+  #oneof.navbar-brand {
+  		font-size: 40px;
+  }
+
+    #two.navbar {
+      margin-bottom: 0;
+      background-color: #263238;
+      z-index: 9999;
+      border: 0;
+      font-size: 14px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  #two.navbar li a{
+      color: #00B8D4 !important;
+  }
+  #two.affix{
+    top:80px;
+    width: 100%;
+  }
+  #twoof.navbar-nav li a:hover/*, .navbar-nav li.active a */{
+      color: #263238 !important;
+      background-color: #FFFFFF !important;
+  }
+  #two.navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #00B8D4 !important;
+  }
+  #twoof.navbar-brand{
+      font-size: 24px;
+           color: #00B8D4 !important;
+  }
+    #twoof.dropdown-menu li a {
+      background-color: #FFFFFF !important;
+
+  }
+  #twoof.dropdown-menu li a:hover {
+      color: #263238 !important;
+  }
+#rem{
+  position: relative;
+  top: 140px;
+}
+select::-ms-expand {
+    display: none;
+}
+select {
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   text-indent: 1px;
+   text-overflow: '';
+   background: url("custom image") no-repeat right center;
+}  
+
+#three{
+	padding-top: 130px;
+}
+
+</style>
+  </head>
+  <body>
+  	<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="one" role="navigation">
+  <div class="container">
+    <div class="navbar-header" id="one">
+      <a class="navbar-brand" href="#" id="oneof">Time<span class="dotcom" id="oneof">-It</span></a>
+    </div>
+    <div style="float:right;">
+      <ul class="nav navbar-nav navbar-right" id="oneof">
+        <li><a href="homepage.html">log out</a></li>
+        <!--li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li-->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <nav class="navbar navbar-default navbar-lower" data-spy="affix" role="navigation" id="two">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#twooftwo">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-left" href="#myPage" id="twoof">Time Yourself</a>
+    </div>
+    <div class="collapse navbar-collapse" id="twooftwo">
+      <ul class="nav navbar-nav navbar-right" id="twoof">
+        <li><a href="#">HOME</a></li>
+        <li  class="active" class="dropdown" id="twoof">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#timetable">TIMETABLE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="twoof">
+            <li><a href="register.html">REMINDERS</a></li>
+            <li><a href="register.html">PROJECTS</a></li>
+            <li><a href="register.html">BUDGET</a></li>
+          </ul>
+        </li>
+        <li><a href="#services">SETTINGS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" id="three">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Reminders</a></li>
+    <li><a data-toggle="tab" href="#menu1">Projects</a></li>
+    <li><a data-toggle="tab" href="#menu2">Budget</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <div class="container" id="rem">
+  <h2>Reminder</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Date :</label>
+      <div class="col-sm-6">
+        <input class="form-control" id="focusedInput" type="text" value="" placeholder="Enter the date">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Event :</label>
+      <div class="col-sm-6">
+        <input class="form-control" id="focusedInput" type="text" value="" placeholder="Enter the event">
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-xs-12 col-sm-2 control-label">Time :</label>
+      <div class="col-xs-4 col-sm-2 col-md-2">
+        <input class="form-control" id="focusedInput" type="text" value="" placeholder="Day">
+      </div>
+      <div class="col-xs-4 col-sm-2 col-md-2">
+        <input class="form-control" id="focusedInput" type="text" value="" placeholder="Minutes">
+      </div>
+      <div class="col-xs-4 col-sm-2 col-md-2">
+        <select class="form-control" id="ampm">
+            <option>A.M.</option>
+            <option>P.M.</option>
+          </select>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <label class="col-sm-2 control-label">Repetition :</label>
+      <div class="col-xs-12 col-sm-2">
+        <select class="form-control">
+          <option>Repeat Daily</option>
+          <option>Repeat Weekly</option>
+          <option>Repeat Monthly</option>
+        </select>
+      </div>
+    </div>
+    <!--div class="form-group">
+      <label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here...">
+      </div>
+    </div>
+    <fieldset>
+      <div class="form-group">
+        <label for="disabledTextInput" class="col-sm-2 control-label">Disabled input and select list (Fieldset disabled)</label>
+        <div class="col-sm-10">
+          <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="disabledSelect" class="col-sm-2 control-label"></label>
+        <div class="col-sm-10">
+          <select id="disabledSelect" class="form-control">
+            <option>Disabled select</option>
+            <option>Disabled dfdgsgfselect</option>
+            <option>Disabled dfgselect</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group has-success has-feedback">
+      <label class="col-sm-2 control-label" for="inputSuccess">Input with success and glyphicon</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputSuccess">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+      </div>
+    </div>
+    <div class="form-group has-feedback">
+      <label class="col-sm-2 control-label" for="inputWarning">Input with warning and glyphicon</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputWarning">
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+      </div>
+    </div>
+    <div class="form-group has-error has-feedback">
+      <label class="col-sm-2 control-label" for="inputError">Input with error and glyphicon</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputError">
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+      </div>
+    </div-->
+  </form>
+</div>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="filler" style="min-height:2000px"></div>
+  </div>
+</div>
+  </body>
+  </html>
+  
